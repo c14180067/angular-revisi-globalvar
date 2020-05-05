@@ -1,0 +1,9 @@
+<h1>EDIT</h1>
+<p>Pilih Jurusan yang ingin diedit</p>
+<div *ngFor="let item of data_arr">
+  {{item.jurusan}}
+</div><br>
+<input type="text" [(ngModel)]="data_jur" placeholder="Nama Jurusan"><br>
+<input type="text" [(ngModel)]="data_penj" placeholder="Penjelasan baru"><br>
+<button (click)="edit()">EDIT</button><br>
+{{check}}
